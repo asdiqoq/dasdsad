@@ -14,30 +14,25 @@
  Kakao.init('37c7e1fd878c4559bd15f48f61e0b383');
   function sendLink() {
 Kakao.Share.sendDefault({
-  objectType: 'location',
-  address: '경기 성남시 분당구 판교역로 166 3층',
-  addressTitle: '카카오 판교오피스 카페톡',
+  objectType: 'calendar',
+  idType: 'event',
+  id: '${YOUR_EVENT_ID}',
   content: {
-    title: '신메뉴 출시♥︎ 체리블라썸라떼',
-    description: '이번 주는 체리블라썸라떼 1+1',
+    title: '1월 신작 평론 모임',
+    description: '따끈한 신작 감상평을 나누는 월간 모임에 초대합니다.',
     imageUrl:
-      'http://k.kakaocdn.net/dn/bSbH9w/btqgegaEDfW/vD9KKV0hEintg6bZT4v4WK/kakaolink40_original.png',
+      'http://k.kakaocdn.net/dn/dFUqwp/bl3SUTqb2VV/VFSqyPpKUzZVVMcmotN9A0/kakaolink40_original.png',
     link: {
-      mobileWebUrl: 'https://developers.kakao.com',
       webUrl: 'https://developers.kakao.com',
+      mobileWebUrl: 'https://developers.kakao.com',
     },
-  },
-  social: {
-    likeCount: 286,
-    commentCount: 45,
-    sharedCount: 845,
   },
   buttons: [
     {
-      title: '웹으로 보기',
+      title: '모임 주제 보기',
       link: {
-        mobileWebUrl: 'https://developers.kakao.com',
         webUrl: 'https://developers.kakao.com',
+        mobileWebUrl: 'https://developers.kakao.com',
           },
         },
       ],
