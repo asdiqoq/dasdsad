@@ -15,66 +15,25 @@
   function sendLink() {
 Kakao.Share.createDefaultButton({
   container: '#kakaotalk-sharing-btn',
-  objectType: 'feed',
+  objectType: 'calendar',
+  idType: 'event',
+  id: '${YOUR_EVENT_ID}',
   content: {
-    title: '뽀거지 놀리기 챌린지',
-    description: '백선아 한테 차인 뽀거지',
+    title: '백선아한테 차인 뽀거지',
+    description: '백선아한테 차인 뽀거지2',
     imageUrl:
       'https://cdn.discordapp.com/attachments/861163186799771659/1246767062861484052/remix-d5f7f199-1d9c-4793-b989-16b6125e91f3.png?ex=665d95cf&is=665c444f&hm=e447abeb9fe315a4be3e227ce11f03478954644dac234fa352dffb46f94a9dab&',
     link: {
-      mobileWebUrl: 'https://developers.kakao.com',
       webUrl: 'https://developers.kakao.com',
+      mobileWebUrl: 'https://developers.kakao.com',
     },
-  },
-  itemContent: {
-    profileText: '백선아한테 차인 뽀거지',
-    profileImageUrl: 'https://cdn.discordapp.com/attachments/861163186799771659/1246767062861484052/remix-d5f7f199-1d9c-4793-b989-16b6125e91f3.png?ex=665d95cf&is=665c444f&hm=e447abeb9fe315a4be3e227ce11f03478954644dac234fa352dffb46f94a9dab&',
-    titleImageUrl: 'https://cdn.discordapp.com/attachments/861163186799771659/1246767062861484052/remix-d5f7f199-1d9c-4793-b989-16b6125e91f3.png?ex=665d95cf&is=665c444f&hm=e447abeb9fe315a4be3e227ce11f03478954644dac234fa352dffb46f94a9dab&',
-    titleImageText: 'Cheese cake',
-    titleImageCategory: 'Cake',
-    items: [
-      {
-        item: '백선아 한테 차인 뽀거지',
-        itemOp: '백선아 한테 차인 뽀거지',
-      },
-      {
-        item: '백선아 한테 차인 뽀거지',
-        itemOp: '백선아 한테 차인 뽀거지',
-      },
-      {
-        item: '백선아 한테 차인 뽀거지',
-        itemOp: '백선아 한테 차인 뽀거지',
-      },
-      {
-        item: '백선아 한테 차인 뽀거지',
-        itemOp: '백선아 한테 차인 뽀거지',
-      },
-      {
-        item: '백선아 한테 차인 뽀거지',
-        itemOp: '백선아 한테 차인 뽀거지',
-      },
-    ],
-    sum: '백선아 한테 차인 뽀거지',
-    sumOp: '백선아 한테 차인 뽀거지',
-  },
-  social: {
-    likeCount: 10,
-    commentCount: 20,
-    sharedCount: 30,
   },
   buttons: [
     {
-      title: '백선아 한테 차인 뽀거지',
+      title: '모임 주제 보기',
       link: {
-        mobileWebUrl: 'https://developers.kakao.com',
         webUrl: 'https://developers.kakao.com',
-      },
-    },
-    {
-      title: '백선아 한테 차인 뽀거지',
-      link: {
         mobileWebUrl: 'https://developers.kakao.com',
-        webUrl: 'https://developers.kakao.com',
           },
         },
       ],
